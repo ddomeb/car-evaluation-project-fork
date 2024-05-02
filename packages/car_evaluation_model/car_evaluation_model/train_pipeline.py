@@ -19,7 +19,7 @@ def run_training():
         )
 
     # Create train and test sets 
-    X_train, _, y_train, _ = dm.create_train_and_test(data=dataset)
+    X_train, _, y_train, _ = dm.split_train_and_test(data=dataset)
 
     # Train the pipeline 
     car_evaluation_pipe.fit(X_train, y_train)

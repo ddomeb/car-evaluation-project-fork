@@ -27,7 +27,7 @@ def load_dataset(path_to_data, names=None):
         
     return dataset
 
-def create_train_and_test(data):
+def split_train_and_test(data):
     """
     Create the training and test set. Both datasets are 
     automatically saved as interim data. 
