@@ -34,7 +34,6 @@ def split_train_and_test(data):
 
     :param data: the data to split into train and test sets
     """
-    data = data.copy()
     
     # Convert labels to numeric
     data.loc[:, config.model_config.target] = data.loc[:, config.model_config.target].map(
